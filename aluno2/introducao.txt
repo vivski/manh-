@@ -1,0 +1,58 @@
+🧠 Assunto da questão: Interseção de listas e manipulação de strings
+📚 Conceitos principais
+Array (lista):
+
+É uma estrutura que guarda vários valores.
+
+Exemplo: ["maçã", "banana", "pera"]
+
+Interseção de arrays:
+
+Significa encontrar os elementos que estão em ambas as listas.
+
+Exemplo:
+
+js
+Copiar
+Editar
+const A = ["maçã", "banana", "kiwi"];
+const B = ["banana", "pera", "melancia"];
+// Interseção = ["banana"]
+Método .includes():
+
+Verifica se um item existe dentro de um array.
+
+Exemplo: B.includes("banana") → true
+
+Laços de repetição:
+
+Usados para percorrer arrays (como o for).
+
+Exemplo:
+
+js
+Copiar
+Editar
+for (let i = 0; i < A.length; i++) {
+  console.log(A[i]);
+}
+Concatenação ou interpolação de strings:
+
+Construção de frases com variáveis.
+
+Exemplo: `1 ${elemento} incomoda muita gente`
+
+🛠️ Como desenvolver a lógica da questão do teste
+Percorrer a lista A.
+
+Verificar se o elemento de A também está em B (interseção).
+
+Guardar os elementos comuns.
+
+Para cada um deles, gerar uma frase no estilo:
+
+1 banana incomoda muita gente
+
+2 pera incomodam, incomodam muito mais
+
+Mostrar todas as frases na ordem da quantidade de interseções encontradas.
