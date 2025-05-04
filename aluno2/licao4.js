@@ -167,5 +167,32 @@ function acharItensComuns(listaA, listaB) {
     ["maçã", "banana", "kiwi", "pera"],
     ["uva", "banana", "pera", "melancia"]
   );
+
+  // validar emails 
+  function validarEmails(listaEmails) {
+    const emailsValidos = [];
   
+    for (let i = 0; i < listaEmails.length; i++) {
+      const email = listaEmails[i];
+      if (email.endsWith("@aluno.ifa.edu.br")) {
+        emailsValidos.push(email);
+        console.log(`✅ Email válido: ${email}`);
+      } else {
+        console.log(`❌ Email inválido: ${email}`);
+      }
+    }
+  
+    return emailsValidos;
+  }
+  
+  // Exemplo de uso
+  const emailsTeste = [
+    "maria@aluno.ifa.edu.br",
+    "joao@gmail.com",
+    "ana@aluno.ifa.edu.br",
+    "bruno@yahoo.com"
+  ];
+  
+  const resultado = validarEmails(emailsTeste);
+  console.log("Lista final de emails aceitos:", resultado);
   
